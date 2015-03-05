@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Price" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-8C-Iyc" userLabel="Enter Price">
+                                <rect key="frame" x="213" y="333" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tW3-HB-5RI">
+                                <rect key="frame" x="200" y="455" width="123" height="29"/>
+                                <segments>
+                                    <segment title="CA"/>
+                                    <segment title="CHI"/>
+                                    <segment title="NY"/>
+                                </segments>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="143" y="456" width="124" height="29"/>
+                                </variation>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ft-BV-5hS">
+                                <rect key="frame" x="215" y="504" width="92" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.26760480440057377" blue="0.24075047837026819" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.95881362634124423" blue="0.15959847822819884" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calculate Tax">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="147" y="398" width="92" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onCalculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9E-0Q-jBj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-By-HTw">
+                                <rect key="frame" x="175" y="170" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="161" y="181" width="88" height="22"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zWT-th-uMS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="431" height="641"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5ft-BV-5hS" secondAttribute="centerX" id="0nS-4o-HxV">
+                                <variation key="widthClass=compact" constant="7"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="kgI-8C-Iyc" secondAttribute="centerX" id="FGo-lG-ziQ">
+                                <variation key="widthClass=compact" constant="11"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="B9h-By-HTw" secondAttribute="centerX" id="MKs-Q3-tlV">
+                                <variation key="widthClass=compact" constant="-5"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="tW3-HB-5RI" secondAttribute="centerX" id="bvU-Xa-Tqr">
+                                <variation key="widthClass=compact" constant="-5"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="kgI-8C-Iyc" secondAttribute="centerY" constant="-48" id="ek6-gK-ZqB">
+                                <variation key="widthClass=compact" constant="-56"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="kgI-8C-Iyc" secondAttribute="centerX" id="gjb-ua-PGe">
+                                <variation key="widthClass=compact" constant="11"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="kgI-8C-Iyc" secondAttribute="centerX" constant="38.5" id="xR7-BH-FVj">
+                                <variation key="widthClass=compact" constant="11"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zWT-th-uMS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MKs-Q3-tlV"/>
+                                <exclude reference="FGo-lG-ziQ"/>
+                                <exclude reference="gjb-ua-PGe"/>
+                                <exclude reference="0nS-4o-HxV"/>
+                                <exclude reference="bvU-Xa-Tqr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zWT-th-uMS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MKs-Q3-tlV"/>
+                                <include reference="FGo-lG-ziQ"/>
+                                <include reference="gjb-ua-PGe"/>
+                                <include reference="0nS-4o-HxV"/>
+                                <include reference="bvU-Xa-Tqr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="calculateTax" destination="5ft-BV-5hS" id="UrT-hA-LoX"/>
+                        <outlet property="priceTextField" destination="kgI-8C-Iyc" id="25E-jr-GRn"/>
+                        <outlet property="resultLabel" destination="B9h-By-HTw" id="qlG-ce-hrZ"/>
+                        <outlet property="segmentedControl" destination="tW3-HB-5RI" id="q3r-Ut-1qH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-204"/>
+        </scene>
+    </scenes>
+</document>

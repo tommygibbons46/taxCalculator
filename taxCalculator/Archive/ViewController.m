@@ -31,7 +31,7 @@
     self.chiTax = .0925;
     self.nyTax = .045;
 }
-- (IBAction)onCalculateButtonTapped:(id)sender
+- (IBAction)onButtonTapped:(id)sender
 {
         NSString *enteredText =self.priceTextField.text;
         double enteredValue = enteredText.intValue;
